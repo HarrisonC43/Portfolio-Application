@@ -6,7 +6,7 @@ import config  # Import the lists from config.py
 
 # Function to fetch stock data from Financial Modeling Prep API
 def get_stock_data(symbols):
-    api_key = "J8RL6fVAd7VHmhYXmOqYLLHlx0wtkW5V"  # Replace with your API key
+    api_key = ""  # Replace with your API key
     url = f"https://financialmodelingprep.com/api/v3/quote/{','.join(symbols)}?apikey={api_key}"
     response = requests.get(url)
     data = response.json()
